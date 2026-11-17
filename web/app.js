@@ -15,6 +15,25 @@ function escapeHtml(value) {
   })[character]);
 }
 
+async function readApiJson(response) {
+  const contentType = response.headers.get('content-type') || '';
+  if (contentType.toLowerCase().includes('application/json')) {
+    try {
+      return await response.json();
+    } catch {
+      throw new Error('The API returned invalid JSON. Restart or redeploy the FastAPI service and try again.');
+    }
+  }
+  const body = await response.text();
+  if (response.status === 413) {
+    throw new Error('The server rejected this upload as too large. Try a smaller PDF.');
+  }
+  if (response.status === 404 || response.status === 405 || /<!doctype html|<html/i.test(body.slice(0, 500))) {
+    throw new Error('The page server returned HTML instead of an API response. Deploy or run the FastAPI web service (not a static-only site) so /match/upload and /metrics are available on this same site.');
+  }
+  throw new Error(`The API returned an unexpected response (HTTP ${response.status}).`);
+}
+
 function setTab(name, focus = false) {
   for (const button of tabButtons) {
     const active = button.dataset.tab === name;
@@ -126,7 +145,7 @@ form.addEventListener('submit', async (event) => {
         body: JSON.stringify({ profile_text: profileText })
       });
     }
-    const result = await response.json();
+    const result = await readApiJson(response);
     if (!response.ok) throw new Error(result.detail || `Request failed (${response.status})`);
     renderSkills(result.extracted_skills || []);
     const sourceNote = document.querySelector('#source-note');
@@ -229,8 +248,8 @@ async function loadMetrics() {
   metricsStatus.textContent = 'Loading evaluation…';
   try {
     const response = await fetch('/metrics', { headers: { Accept: 'application/json' } });
-    const payload = await response.json().catch(() => ({}));
-    if (response.status === 404) {
+    const payload = await readApiJson(response);
+    if (response.status === 404 && payload.detail === 'Evaluation not run yet') {
       metricsStatus.textContent = 'Evaluation not run yet';
       return;
     }
