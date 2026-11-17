@@ -1,0 +1,7 @@
+[tool.vercel]
+entrypoint = "api.main:app"
+
+[tool.vercel.fastapi.static]
+# The site is public and has no per-user authentication middleware. Keep the
+# HTML, CSS, and JavaScript available from Vercel's CDN.
+cdn = true

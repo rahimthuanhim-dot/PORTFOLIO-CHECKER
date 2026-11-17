@@ -20,7 +20,9 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 RESULTS_FILE = ROOT / "results" / "metrics.json"
 WEB_DIR = ROOT / "web"
-MAX_RESUME_BYTES = 10 * 1024 * 1024
+# Vercel Functions limit the entire request body (including multipart framing)
+# to 4.5 MB, so keep the PDF itself below that platform limit.
+MAX_RESUME_BYTES = 4 * 1024 * 1024
 MAX_PDF_PAGES = 100
 sys.path.insert(0, str(ROOT / "src"))
 

@@ -122,6 +122,12 @@ form.addEventListener('submit', async (event) => {
     resumeInput.focus();
     return;
   }
+  if (resumeFile && resumeFile.size > 4 * 1024 * 1024) {
+    matchError.textContent = 'This deployment accepts PDF files up to 4 MB. Try a smaller resume or paste the resume text.';
+    matchError.hidden = false;
+    resumeInput.focus();
+    return;
+  }
   matchButton.disabled = true;
   matchButton.innerHTML = 'Finding matches <span aria-hidden="true">…</span>';
   document.querySelector('#empty-state').hidden = true;

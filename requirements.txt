@@ -5,7 +5,3 @@ uvicorn[standard]>=0.30.0
 scikit-learn>=1.4.0
 python-multipart>=0.0.9
 pypdf>=5.0.0
-
-# Optional: for development/testing
-pytest>=7.0.0
-pytest-cov>=4.0.0
