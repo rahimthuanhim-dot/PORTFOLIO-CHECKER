@@ -1,8 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "api/main.py": {
-      "includeFiles": "{data/**,src/**,web/**,results/evaluation_config.json,results/metrics.json}"
-    }
-  }
+  "framework": null,
+  "outputDirectory": "web",
+  "installCommand": "echo No install step required for the static site",
+  "buildCommand": "echo Static site files are ready"
 }

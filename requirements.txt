@@ -1,7 +1,4 @@
-# Core dependencies
+# Python dependencies for the research and evaluation scripts. The deployed
+# website itself is static and does not install or run a Python API.
 sentence-transformers>=3.0.0
-fastapi>=0.115.0
-uvicorn[standard]>=0.30.0
 scikit-learn>=1.4.0
-python-multipart>=0.0.9
-pypdf>=5.0.0

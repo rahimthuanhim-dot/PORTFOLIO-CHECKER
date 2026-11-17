@@ -8,14 +8,13 @@ The matcher is implemented in `src/matcher.py`. It extracts posting skills from 
 
 Gap reports are derived only from skills extracted from the posting description. The required/preferred columns classify these extracted skills; skills in those columns that the extractor did not find are not reported as gaps. Gaps say that a skill was not evidenced in the profile text, not that the student lacks it.
 
-`src/evaluate.py` produces pooled, shuffled top-five relevance judgments, manually annotated extraction documents, and gap usefulness ratings. It computes human evaluation metrics only after labels and annotator names are complete. The API uses the same matcher and baseline modules and serves the static frontend.
+`src/evaluate.py` produces pooled, shuffled top-five relevance judgments, manually annotated extraction documents, and gap usefulness ratings. It computes human evaluation metrics only after labels and annotator names are complete. The deployed demo is static: `web/app.js` loads exported taxonomy/postings JSON and runs dictionary extraction, weighted skill ranking, gap reporting, and a stopword-filtered TF-IDF baseline in the browser. The separate Python extractor and evaluator retain embedding-based hybrid extraction for research evaluation. PDF.js extracts selectable PDF text on the user's device.
 
 ## Design choices and threshold
 
 - The evaluation sample and development split are reproducibly selected from different student records. The current synthetic dev split and the human-evaluation students are disjoint.
 - `--tune` evaluates the threshold grid using only `results/dev_split_synthetic.csv` and its generated `synthetic_true_skills`. Its objective is micro-F1; ties select the stricter cutoff. The held-out evaluation students and human-label sheets are not used for tuning.
-- The most recent tuning run selected a similarity threshold of `0.75` and computed a synthetic dev micro-F1 of `0.6845`. This is a development result against generated labels, not a human evaluation metric. The selected threshold is saved in `results/evaluation_config.json`; the API uses it by default unless a request overrides it.
-- The extractor/API fallback before tuning is `0.55`. The configured threshold is used to build current templates and can be changed with `--threshold`.
+- The selected embedding threshold is recorded in `results/evaluation_config.json`; the Python evaluator reads it by default unless `--threshold` overrides it. The static browser demo does not use an embedding threshold because it matches curated aliases.
 - Relevance, extraction, and gap-rating templates each include a blank `annotator` field. Evaluation records distinct annotator counts from completed templates; annotator entries are blank at present, so no actual annotator count is available.
 
 ## Limitations and current evaluation state
@@ -26,6 +25,7 @@ Gap reports are derived only from skills extracted from the posting description.
 - The annotator count is unknown until the templates are completed. The sheets capture annotator names but do not yet contain inter-annotator agreement or adjudication fields.
 - TF-IDF is a lexical baseline and may miss paraphrases. The matcher depends on extraction quality and the synthetic posting skill classification. Both ranker scores are ranking signals, not probabilities.
 - Threshold tuning uses generated development labels. It may overfit the synthetic writing patterns and should not be presented as validation on real students.
+- The public static demo does not run sentence-transformer embeddings. It uses literal taxonomy aliases, so paraphrased skills may be missed. PDF scanning supports selectable text; image-only documents need OCR, which is not provided.
 
 ## Failure cases from evaluated results
 

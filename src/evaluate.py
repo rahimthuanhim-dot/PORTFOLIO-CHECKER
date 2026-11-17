@@ -28,6 +28,7 @@ GAP_FILE = RESULTS_DIR / "gap_rating_template.csv"
 DEV_FILE = RESULTS_DIR / "dev_split_synthetic.csv"
 CONFIG_FILE = RESULTS_DIR / "evaluation_config.json"
 METRICS_FILE = RESULTS_DIR / "metrics.json"
+WEB_METRICS_FILE = ROOT / "web" / "metrics.json"
 SEED = 20261117
 SAMPLE_SIZE = 50
 DEFAULT_THRESHOLD = 0.55
@@ -456,7 +457,9 @@ def main() -> int:
         return 2
 
     METRICS_FILE.write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
+    WEB_METRICS_FILE.write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
     print(f"Saved computed metrics to {METRICS_FILE.relative_to(ROOT)}")
+    print(f"Copied computed metrics to {WEB_METRICS_FILE.relative_to(ROOT)} for the static website")
     _print_comparison(metrics)
     return 0
 

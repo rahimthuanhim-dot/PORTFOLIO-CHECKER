@@ -42,15 +42,15 @@
               <h2>Tell us about your work</h2>
             </div>
           </div>
-          <p class="muted">Paste a short profile, project summary, or resume excerpt, or upload a PDF resume to scan.</p>
+          <p class="muted">Paste a short profile, project summary, or resume excerpt, or scan a PDF locally in your browser.</p>
           <form id="match-form">
             <label class="sr-only" for="profile-text">Profile text</label>
             <textarea id="profile-text" name="profile_text" rows="8" placeholder="Paste your profile text here, or choose a resume PDF below. For example: I built a small Flask service, cleaned survey data with Python, and shipped a responsive dashboard…"></textarea>
-            <div class="form-meta"><span id="character-count">0 characters</span><span>Text stays in this demo request</span></div>
+            <div class="form-meta"><span id="character-count">Characters</span><span>Profile stays in your browser</span></div>
             <div class="upload-section">
               <label class="upload-title" for="resume-file">Or scan a resume PDF</label>
               <input id="resume-file" name="resume" type="file" accept=".pdf,application/pdf">
-              <p class="upload-hint" id="upload-hint">PDF text is extracted in memory and not saved. Maximum PDF size: 4 MB. A selected PDF takes priority over pasted text.</p>
+              <p class="upload-hint" id="upload-hint">PDF text is read on your device and is not uploaded. Selectable-text PDFs only; scanned images need OCR.</p>
               <p class="selected-file" id="selected-file" hidden></p>
             </div>
             <button class="primary-button" id="match-button" type="submit">
@@ -72,11 +72,12 @@
             <section class="surface skill-summary">
               <div class="section-heading compact-heading">
                 <div><p class="eyebrow">Shared skill space</p><h2>Skills we found</h2></div>
-                <span class="result-count" id="skill-count">0 skills</span>
+                <span class="result-count" id="skill-count">Skills detected</span>
               </div>
               <p class="source-note" id="source-note" hidden></p>
               <div class="skill-chips" id="skill-chips"></div>
             </section>
+            <p class="source-note">Static demo: skill extraction uses the curated alias dictionary. Semantic embedding extraction needs the research backend and is not enabled here.</p>
             <div class="results-heading">
               <div><p class="eyebrow">Ranked for your profile</p><h2>Internship matches</h2></div>
               <p class="muted">Matcher and keyword baseline</p>
@@ -110,7 +111,7 @@
             <span class="chart-legend"><i class="legend-matcher"></i> Matcher / hybrid <i class="legend-baseline"></i> Baseline / dictionary</span>
           </div>
           <div id="metrics-chart" class="bar-chart" role="img" aria-label="Bar chart comparing computed metrics"></div>
-          <p class="chart-caption">Bars reflect the values in <code>/metrics</code>. Gap usefulness is shown for the matcher’s generated report.</p>
+          <p class="chart-caption">Bars reflect computed human-labeled values exported from the evaluation results file. Gap usefulness is shown for the matcher’s generated report.</p>
         </section>
         <section class="surface table-card">
           <div class="section-heading"><div><p class="eyebrow">Computed values</p><h3>Evaluation table</h3></div><span id="evaluation-counts" class="muted"></span></div>

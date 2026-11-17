@@ -1,25 +1,29 @@
-# Skill-based internship matcher data
+# Skill-based internship matcher
+
+This university project maps profile text and internship descriptions into a shared curated skill taxonomy, ranks postings with required skills weighted above preferred skills, compares a TF-IDF keyword baseline, and reports skills found in postings but not in a profile.
 
 ## Synthetic data notice
 
-`data/internships.csv` and `data/students.csv` contain synthetic examples created for development and evaluation. They do not describe real employers, vacancies, students, or employment outcomes. The `required_skills`, `preferred_skills`, and `true_skills` columns are synthetic ground-truth labels generated from the taxonomy; they are not human-annotated judgments.
+`data/internships.csv` and `data/students.csv` contain synthetic examples created for development and evaluation. They do not describe real employers, vacancies, students, or employment outcomes. The `required_skills`, `preferred_skills`, and `true_skills` columns are synthetic ground-truth labels generated from the taxonomy, not human-annotated judgments.
 
-## Generation
+## Static website
 
-Run `python src/generate_data.py` from the project root. The script uses a fixed random seed for reproducible output, writes `data/skills.json` from the curated taxonomy in the script, and creates varied paraphrased descriptions and profiles alongside pipe-separated ground-truth skill names. The skill taxonomy contains canonical names, categories, and aliases. Generated prose is intentionally varied, but is template-based synthetic text rather than collected language.
+The live demo is a static website. Matching, skill extraction, ranking, and gap reports run in the visitor's browser; profile text and PDF contents are not sent to a server. The browser reads the generated files under `web/data/`.
 
-## Run the app
+The static demo uses case-insensitive, word-boundary-safe matches against the skill taxonomy's canonical names and aliases. Its matcher uses the synthetic required/preferred labels only to classify extracted posting skills and apply the required/preferred weights. Gap items themselves must first have been extracted from the posting description. The baseline uses stopword-filtered unigram TF-IDF cosine similarity. The static demo does not run sentence-transformers; paraphrases that do not contain a taxonomy alias can be missed. The Python extractor and evaluator remain available for research and labeled evaluation.
 
-Install project dependencies with `python -m pip install -r requirements.txt`, then start the API and static frontend from the project root with `python -m uvicorn api.main:app --reload`. Open the local server URL printed by Uvicorn. The demo accepts pasted text through `POST /match` or a PDF resume through `POST /match/upload`. PDF text is extracted in memory and not saved. PDFs with no selectable text need OCR, which is not enabled. The Results tab fetches `GET /metrics` and displays “Evaluation not run yet” until `results/metrics.json` has been produced from completed human-label templates.
-
-The matcher weights extracted required skills above extracted preferred skills. The keyword baseline lowercases and tokenizes technical terms, removes English and project boilerplate stopwords, then ranks with unigram TF-IDF cosine similarity. Gap reports only include skills extracted from the posting description and classified as required or preferred; they do not add unmentioned ground-truth skills. Treat gaps as suggestions for review, not claims about a student's actual ability.
-
-Run `python src/evaluate.py --tune --regenerate-templates` to create a synthetic development split disjoint from the human-evaluation student sample, tune the embedding threshold against that development split's synthetic `true_skills`, and regenerate blank label templates. The command refuses to overwrite any existing label or annotator entries. Fill all label columns and annotator names by hand, then rerun `python src/evaluate.py` to compute evaluation metrics.
+Refresh browser data from the existing source files with `python src/export_static_data.py`. This exports the taxonomy and synthetic internship postings; it does not create or modify labels or metrics.
 
 ## Deploy on Vercel
 
-The repository is configured as a single FastAPI project with the static web UI served from the same domain. Push the project to a Git repository, import that repository in Vercel, and leave the project root set to the repository root. Vercel detects FastAPI from the runtime dependency in `requirements.txt`; `pyproject.toml` points it to the `api.main:app` entry point. Do not set a static-only output directory or a custom build command. That entry point serves `/`, `/match`, `/match/upload`, and `/metrics`. Static assets and runtime data files are explicitly included by `vercel.json`.
+The root `vercel.json` config selects the `Other` framework preset, serves the `web/` output directory, and skips dependency installation and a server build. In Vercel, set Root Directory to the repository root (`.`), disable custom Install Command and Build Command overrides, and deploy the latest commit. No API or Python packages are needed to serve the website. The PDF parser is loaded by the browser from the pinned PDF.js CDN package; PDFs are parsed locally and selectable text only is supported (image-only scans need OCR).
 
-PDF uploads are limited in the app to 4 MB so the multipart request stays under Vercel Functions' 4.5 MB request-body limit. PDFs must contain selectable text; OCR is not enabled. The app uses the `all-MiniLM-L6-v2` Sentence Transformers model, which is loaded on first embedding request and may download model files at runtime. Vercel's standard Python function bundle limit is 500 MB, so check the deployment build logs for bundle-size errors. The interface, PDF upload, matching, and gap reports remain part of the app.
+## Run the website locally
 
-To run locally, use `python -m pip install -r requirements.txt` followed by `python -m uvicorn api.main:app --reload`. Install `requirements-dev.txt` only if you need the development/test tools.
+From the repository root, run `python src/export_static_data.py` after changing source data, then start a local static server with `python -m http.server 8000 --directory web`. Open `http://localhost:8000` in a browser. The PDF parser and styles use web resources, so use an internet connection while viewing the demo.
+
+## Research scripts and evaluation
+
+Install `requirements.txt` to use the Python sentence-transformer extractor and evaluation tools. The keyword baseline lowercases and tokenizes technical terms, removes English and project boilerplate stopwords, then ranks with unigram TF-IDF cosine similarity. The weighted matcher gives required skills more weight than preferred skills. Treat gaps as suggestions for review, not claims about a student's actual ability.
+
+Run `python src/evaluate.py --tune --regenerate-templates` to create a synthetic development split disjoint from the human-evaluation student sample, tune the embedding threshold using only that synthetic development split, and regenerate blank label templates. The command refuses to overwrite any existing label or annotator entries. Fill the label and annotator columns by hand, then run `python src/evaluate.py` to compute metrics from those annotations. Successful evaluation writes `results/metrics.json` and an identical `web/metrics.json` for the static Results tab. Until this happens, the website displays “Evaluation not run yet”; no labels or metrics are generated as placeholders.
