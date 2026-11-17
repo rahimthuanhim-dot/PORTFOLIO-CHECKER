@@ -248,7 +248,6 @@ async function readPdfText(file) {
     const content = await page.getTextContent();
     pages.push(content.items.map((item) => item.str || '').join(' '));
   }
-  await document.destroy();
   return pages.join('\n').trim();
 }
 
