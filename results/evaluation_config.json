@@ -1,0 +1,9 @@
+{
+  "embedding_model": "all-MiniLM-L6-v2",
+  "similarity_threshold": 0.75,
+  "threshold_tuning": {
+    "source": "results/dev_split_synthetic.csv",
+    "objective": "micro-F1 against synthetic_true_skills",
+    "dev_micro_f1": 0.6845070422535211
+  }
+}

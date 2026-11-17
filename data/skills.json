@@ -1,0 +1,2129 @@
+[
+  {
+    "canonical_name": "Python",
+    "category": "software",
+    "aliases": [
+      "py",
+      "Python 3"
+    ]
+  },
+  {
+    "canonical_name": "Java",
+    "category": "software",
+    "aliases": [
+      "Java SE"
+    ]
+  },
+  {
+    "canonical_name": "C",
+    "category": "software",
+    "aliases": [
+      "C language"
+    ]
+  },
+  {
+    "canonical_name": "C++",
+    "category": "software",
+    "aliases": [
+      "CPP",
+      "C plus plus"
+    ]
+  },
+  {
+    "canonical_name": "C#",
+    "category": "software",
+    "aliases": [
+      "C sharp",
+      "C-sharp"
+    ]
+  },
+  {
+    "canonical_name": "Go",
+    "category": "software",
+    "aliases": [
+      "Golang"
+    ]
+  },
+  {
+    "canonical_name": "Rust",
+    "category": "software",
+    "aliases": [
+      "Rust lang"
+    ]
+  },
+  {
+    "canonical_name": "Ruby",
+    "category": "software",
+    "aliases": [
+      "Ruby language"
+    ]
+  },
+  {
+    "canonical_name": "PHP",
+    "category": "software",
+    "aliases": [
+      "PHP language"
+    ]
+  },
+  {
+    "canonical_name": "Kotlin",
+    "category": "software",
+    "aliases": [
+      "Kotlin JVM"
+    ]
+  },
+  {
+    "canonical_name": "Swift",
+    "category": "software",
+    "aliases": [
+      "Swift language"
+    ]
+  },
+  {
+    "canonical_name": "Scala",
+    "category": "software",
+    "aliases": [
+      "Scala language"
+    ]
+  },
+  {
+    "canonical_name": "Bash",
+    "category": "software",
+    "aliases": [
+      "Bash scripting",
+      "shell scripting"
+    ]
+  },
+  {
+    "canonical_name": "PowerShell",
+    "category": "software",
+    "aliases": [
+      "Powershell scripting"
+    ]
+  },
+  {
+    "canonical_name": "SQL",
+    "category": "software",
+    "aliases": [
+      "structured query language"
+    ]
+  },
+  {
+    "canonical_name": "Object-oriented programming",
+    "category": "software",
+    "aliases": [
+      "OOP",
+      "object oriented design"
+    ]
+  },
+  {
+    "canonical_name": "Functional programming",
+    "category": "software",
+    "aliases": [
+      "FP"
+    ]
+  },
+  {
+    "canonical_name": "Concurrency",
+    "category": "software",
+    "aliases": [
+      "concurrent programming"
+    ]
+  },
+  {
+    "canonical_name": "Multithreading",
+    "category": "software",
+    "aliases": [
+      "multi-threading",
+      "threads"
+    ]
+  },
+  {
+    "canonical_name": "Data structures",
+    "category": "software",
+    "aliases": [
+      "DS",
+      "data structure design"
+    ]
+  },
+  {
+    "canonical_name": "Algorithms",
+    "category": "software",
+    "aliases": [
+      "algorithm design",
+      "problem solving"
+    ]
+  },
+  {
+    "canonical_name": "Design patterns",
+    "category": "software",
+    "aliases": [
+      "software patterns"
+    ]
+  },
+  {
+    "canonical_name": "System design",
+    "category": "software",
+    "aliases": [
+      "software architecture"
+    ]
+  },
+  {
+    "canonical_name": "Clean code",
+    "category": "software",
+    "aliases": [
+      "readable code",
+      "code quality"
+    ]
+  },
+  {
+    "canonical_name": "Code review",
+    "category": "software",
+    "aliases": [
+      "peer review"
+    ]
+  },
+  {
+    "canonical_name": "Debugging",
+    "category": "software",
+    "aliases": [
+      "troubleshooting code"
+    ]
+  },
+  {
+    "canonical_name": "Unit testing",
+    "category": "software",
+    "aliases": [
+      "unit tests"
+    ]
+  },
+  {
+    "canonical_name": "Integration testing",
+    "category": "software",
+    "aliases": [
+      "integration tests"
+    ]
+  },
+  {
+    "canonical_name": "Test-driven development",
+    "category": "software",
+    "aliases": [
+      "TDD"
+    ]
+  },
+  {
+    "canonical_name": "Behavior-driven development",
+    "category": "software",
+    "aliases": [
+      "BDD"
+    ]
+  },
+  {
+    "canonical_name": "Continuous integration",
+    "category": "software",
+    "aliases": [
+      "CI"
+    ]
+  },
+  {
+    "canonical_name": "Continuous delivery",
+    "category": "software",
+    "aliases": [
+      "CD",
+      "continuous deployment"
+    ]
+  },
+  {
+    "canonical_name": "Git",
+    "category": "software",
+    "aliases": [
+      "version control",
+      "git workflow"
+    ]
+  },
+  {
+    "canonical_name": "GitHub",
+    "category": "software",
+    "aliases": [
+      "GitHub collaboration"
+    ]
+  },
+  {
+    "canonical_name": "GitLab",
+    "category": "software",
+    "aliases": [
+      "GitLab CI"
+    ]
+  },
+  {
+    "canonical_name": "Linux",
+    "category": "software",
+    "aliases": [
+      "GNU/Linux"
+    ]
+  },
+  {
+    "canonical_name": "Operating systems",
+    "category": "software",
+    "aliases": [
+      "OS concepts"
+    ]
+  },
+  {
+    "canonical_name": "Networking fundamentals",
+    "category": "software",
+    "aliases": [
+      "computer networking"
+    ]
+  },
+  {
+    "canonical_name": "TCP/IP",
+    "category": "software",
+    "aliases": [
+      "TCP IP stack"
+    ]
+  },
+  {
+    "canonical_name": "DNS",
+    "category": "software",
+    "aliases": [
+      "domain name system"
+    ]
+  },
+  {
+    "canonical_name": "HTTP",
+    "category": "software",
+    "aliases": [
+      "HTTP protocol"
+    ]
+  },
+  {
+    "canonical_name": "Security fundamentals",
+    "category": "software",
+    "aliases": [
+      "application security basics"
+    ]
+  },
+  {
+    "canonical_name": "OAuth",
+    "category": "software",
+    "aliases": [
+      "OAuth 2.0"
+    ]
+  },
+  {
+    "canonical_name": "JWT",
+    "category": "software",
+    "aliases": [
+      "JSON Web Token"
+    ]
+  },
+  {
+    "canonical_name": "Cryptography fundamentals",
+    "category": "software",
+    "aliases": [
+      "encryption basics"
+    ]
+  },
+  {
+    "canonical_name": "API development",
+    "category": "software",
+    "aliases": [
+      "API design",
+      "built REST services"
+    ]
+  },
+  {
+    "canonical_name": "REST APIs",
+    "category": "software",
+    "aliases": [
+      "RESTful services",
+      "REST endpoints"
+    ]
+  },
+  {
+    "canonical_name": "GraphQL",
+    "category": "software",
+    "aliases": [
+      "GraphQL APIs"
+    ]
+  },
+  {
+    "canonical_name": "gRPC",
+    "category": "software",
+    "aliases": [
+      "Google RPC"
+    ]
+  },
+  {
+    "canonical_name": "Microservices",
+    "category": "software",
+    "aliases": [
+      "microservice architecture"
+    ]
+  },
+  {
+    "canonical_name": "Event-driven architecture",
+    "category": "software",
+    "aliases": [
+      "EDA"
+    ]
+  },
+  {
+    "canonical_name": "Message queues",
+    "category": "software",
+    "aliases": [
+      "message brokers"
+    ]
+  },
+  {
+    "canonical_name": "Apache Kafka",
+    "category": "software",
+    "aliases": [
+      "Kafka"
+    ]
+  },
+  {
+    "canonical_name": "RabbitMQ",
+    "category": "software",
+    "aliases": [
+      "AMQP"
+    ]
+  },
+  {
+    "canonical_name": "Caching",
+    "category": "software",
+    "aliases": [
+      "cache design"
+    ]
+  },
+  {
+    "canonical_name": "Redis",
+    "category": "software",
+    "aliases": [
+      "Redis cache"
+    ]
+  },
+  {
+    "canonical_name": "Memcached",
+    "category": "software",
+    "aliases": [
+      "memory caching"
+    ]
+  },
+  {
+    "canonical_name": "Relational databases",
+    "category": "software",
+    "aliases": [
+      "RDBMS"
+    ]
+  },
+  {
+    "canonical_name": "Database design",
+    "category": "software",
+    "aliases": [
+      "schema design"
+    ]
+  },
+  {
+    "canonical_name": "Database normalization",
+    "category": "software",
+    "aliases": [
+      "normalization"
+    ]
+  },
+  {
+    "canonical_name": "Data analysis",
+    "category": "data_ml",
+    "aliases": [
+      "data analytics"
+    ]
+  },
+  {
+    "canonical_name": "Data cleaning",
+    "category": "data_ml",
+    "aliases": [
+      "data wrangling",
+      "data preparation"
+    ]
+  },
+  {
+    "canonical_name": "Exploratory data analysis",
+    "category": "data_ml",
+    "aliases": [
+      "EDA",
+      "exploratory analysis"
+    ]
+  },
+  {
+    "canonical_name": "Statistics",
+    "category": "data_ml",
+    "aliases": [
+      "statistical analysis"
+    ]
+  },
+  {
+    "canonical_name": "Probability",
+    "category": "data_ml",
+    "aliases": [
+      "probability theory"
+    ]
+  },
+  {
+    "canonical_name": "Linear algebra",
+    "category": "data_ml",
+    "aliases": [
+      "matrix algebra"
+    ]
+  },
+  {
+    "canonical_name": "Calculus",
+    "category": "data_ml",
+    "aliases": [
+      "differential calculus"
+    ]
+  },
+  {
+    "canonical_name": "Hypothesis testing",
+    "category": "data_ml",
+    "aliases": [
+      "statistical tests"
+    ]
+  },
+  {
+    "canonical_name": "A/B testing",
+    "category": "data_ml",
+    "aliases": [
+      "split testing"
+    ]
+  },
+  {
+    "canonical_name": "Experimental design",
+    "category": "data_ml",
+    "aliases": [
+      "experiment design"
+    ]
+  },
+  {
+    "canonical_name": "Causal inference",
+    "category": "data_ml",
+    "aliases": [
+      "causal analysis"
+    ]
+  },
+  {
+    "canonical_name": "Time series analysis",
+    "category": "data_ml",
+    "aliases": [
+      "time-series"
+    ]
+  },
+  {
+    "canonical_name": "Forecasting",
+    "category": "data_ml",
+    "aliases": [
+      "demand forecasting"
+    ]
+  },
+  {
+    "canonical_name": "Regression",
+    "category": "data_ml",
+    "aliases": [
+      "regression analysis"
+    ]
+  },
+  {
+    "canonical_name": "Classification",
+    "category": "data_ml",
+    "aliases": [
+      "classification models"
+    ]
+  },
+  {
+    "canonical_name": "Clustering",
+    "category": "data_ml",
+    "aliases": [
+      "cluster analysis"
+    ]
+  },
+  {
+    "canonical_name": "Dimensionality reduction",
+    "category": "data_ml",
+    "aliases": [
+      "PCA",
+      "feature reduction"
+    ]
+  },
+  {
+    "canonical_name": "Feature engineering",
+    "category": "data_ml",
+    "aliases": [
+      "feature creation"
+    ]
+  },
+  {
+    "canonical_name": "Model evaluation",
+    "category": "data_ml",
+    "aliases": [
+      "model validation"
+    ]
+  },
+  {
+    "canonical_name": "Cross-validation",
+    "category": "data_ml",
+    "aliases": [
+      "cross validation"
+    ]
+  },
+  {
+    "canonical_name": "Hyperparameter tuning",
+    "category": "data_ml",
+    "aliases": [
+      "parameter search"
+    ]
+  },
+  {
+    "canonical_name": "Scikit-learn",
+    "category": "data_ml",
+    "aliases": [
+      "sklearn",
+      "scikit learn"
+    ]
+  },
+  {
+    "canonical_name": "PyTorch",
+    "category": "data_ml",
+    "aliases": [
+      "torch"
+    ]
+  },
+  {
+    "canonical_name": "TensorFlow",
+    "category": "data_ml",
+    "aliases": [
+      "tf"
+    ]
+  },
+  {
+    "canonical_name": "Keras",
+    "category": "data_ml",
+    "aliases": [
+      "keras API"
+    ]
+  },
+  {
+    "canonical_name": "XGBoost",
+    "category": "data_ml",
+    "aliases": [
+      "extreme gradient boosting"
+    ]
+  },
+  {
+    "canonical_name": "LightGBM",
+    "category": "data_ml",
+    "aliases": [
+      "light gradient boosting"
+    ]
+  },
+  {
+    "canonical_name": "CatBoost",
+    "category": "data_ml",
+    "aliases": [
+      "categorical boosting"
+    ]
+  },
+  {
+    "canonical_name": "Gradient boosting",
+    "category": "data_ml",
+    "aliases": [
+      "GBDT"
+    ]
+  },
+  {
+    "canonical_name": "Random forests",
+    "category": "data_ml",
+    "aliases": [
+      "random forest"
+    ]
+  },
+  {
+    "canonical_name": "Decision trees",
+    "category": "data_ml",
+    "aliases": [
+      "tree models"
+    ]
+  },
+  {
+    "canonical_name": "Support vector machines",
+    "category": "data_ml",
+    "aliases": [
+      "SVM"
+    ]
+  },
+  {
+    "canonical_name": "Nearest neighbors",
+    "category": "data_ml",
+    "aliases": [
+      "KNN",
+      "k-nearest neighbors"
+    ]
+  },
+  {
+    "canonical_name": "Naive Bayes",
+    "category": "data_ml",
+    "aliases": [
+      "NB classifier"
+    ]
+  },
+  {
+    "canonical_name": "Ensemble learning",
+    "category": "data_ml",
+    "aliases": [
+      "model ensembles"
+    ]
+  },
+  {
+    "canonical_name": "Neural networks",
+    "category": "data_ml",
+    "aliases": [
+      "artificial neural networks"
+    ]
+  },
+  {
+    "canonical_name": "Deep learning",
+    "category": "data_ml",
+    "aliases": [
+      "DL"
+    ]
+  },
+  {
+    "canonical_name": "Convolutional neural networks",
+    "category": "data_ml",
+    "aliases": [
+      "CNN"
+    ]
+  },
+  {
+    "canonical_name": "Recurrent neural networks",
+    "category": "data_ml",
+    "aliases": [
+      "RNN"
+    ]
+  },
+  {
+    "canonical_name": "Transformers",
+    "category": "data_ml",
+    "aliases": [
+      "transformer models"
+    ]
+  },
+  {
+    "canonical_name": "Attention mechanisms",
+    "category": "data_ml",
+    "aliases": [
+      "self-attention"
+    ]
+  },
+  {
+    "canonical_name": "Large language models",
+    "category": "data_ml",
+    "aliases": [
+      "LLMs",
+      "generative language models"
+    ]
+  },
+  {
+    "canonical_name": "Prompt engineering",
+    "category": "data_ml",
+    "aliases": [
+      "prompt design"
+    ]
+  },
+  {
+    "canonical_name": "Retrieval-augmented generation",
+    "category": "data_ml",
+    "aliases": [
+      "RAG"
+    ]
+  },
+  {
+    "canonical_name": "Fine-tuning language models",
+    "category": "data_ml",
+    "aliases": [
+      "LLM fine tuning"
+    ]
+  },
+  {
+    "canonical_name": "Natural language processing",
+    "category": "data_ml",
+    "aliases": [
+      "NLP"
+    ]
+  },
+  {
+    "canonical_name": "Text classification",
+    "category": "data_ml",
+    "aliases": [
+      "document classification"
+    ]
+  },
+  {
+    "canonical_name": "Named entity recognition",
+    "category": "data_ml",
+    "aliases": [
+      "NER"
+    ]
+  },
+  {
+    "canonical_name": "Information retrieval",
+    "category": "data_ml",
+    "aliases": [
+      "search and retrieval"
+    ]
+  },
+  {
+    "canonical_name": "Text embeddings",
+    "category": "data_ml",
+    "aliases": [
+      "sentence embeddings"
+    ]
+  },
+  {
+    "canonical_name": "Vector databases",
+    "category": "data_ml",
+    "aliases": [
+      "vector stores"
+    ]
+  },
+  {
+    "canonical_name": "Computer vision",
+    "category": "data_ml",
+    "aliases": [
+      "CV"
+    ]
+  },
+  {
+    "canonical_name": "Image classification",
+    "category": "data_ml",
+    "aliases": [
+      "visual classification"
+    ]
+  },
+  {
+    "canonical_name": "Object detection",
+    "category": "data_ml",
+    "aliases": [
+      "object recognition"
+    ]
+  },
+  {
+    "canonical_name": "Image segmentation",
+    "category": "data_ml",
+    "aliases": [
+      "semantic segmentation"
+    ]
+  },
+  {
+    "canonical_name": "OpenCV",
+    "category": "data_ml",
+    "aliases": [
+      "Open Computer Vision"
+    ]
+  },
+  {
+    "canonical_name": "Recommendation systems",
+    "category": "data_ml",
+    "aliases": [
+      "recommender systems"
+    ]
+  },
+  {
+    "canonical_name": "Reinforcement learning",
+    "category": "data_ml",
+    "aliases": [
+      "RL"
+    ]
+  },
+  {
+    "canonical_name": "MLOps",
+    "category": "data_ml",
+    "aliases": [
+      "machine learning operations"
+    ]
+  },
+  {
+    "canonical_name": "Model deployment",
+    "category": "data_ml",
+    "aliases": [
+      "serving ML models"
+    ]
+  },
+  {
+    "canonical_name": "HTML",
+    "category": "web",
+    "aliases": [
+      "HTML5"
+    ]
+  },
+  {
+    "canonical_name": "CSS",
+    "category": "web",
+    "aliases": [
+      "CSS3",
+      "cascading style sheets"
+    ]
+  },
+  {
+    "canonical_name": "JavaScript",
+    "category": "web",
+    "aliases": [
+      "JS",
+      "ECMAScript"
+    ]
+  },
+  {
+    "canonical_name": "TypeScript",
+    "category": "web",
+    "aliases": [
+      "TS"
+    ]
+  },
+  {
+    "canonical_name": "Node.js",
+    "category": "web",
+    "aliases": [
+      "Node",
+      "node.js backend"
+    ]
+  },
+  {
+    "canonical_name": "React",
+    "category": "web",
+    "aliases": [
+      "React.js",
+      "ReactJS"
+    ]
+  },
+  {
+    "canonical_name": "Next.js",
+    "category": "web",
+    "aliases": [
+      "NextJS"
+    ]
+  },
+  {
+    "canonical_name": "Vue.js",
+    "category": "web",
+    "aliases": [
+      "Vue",
+      "VueJS"
+    ]
+  },
+  {
+    "canonical_name": "Angular",
+    "category": "web",
+    "aliases": [
+      "Angular framework"
+    ]
+  },
+  {
+    "canonical_name": "Svelte",
+    "category": "web",
+    "aliases": [
+      "SvelteKit"
+    ]
+  },
+  {
+    "canonical_name": "jQuery",
+    "category": "web",
+    "aliases": [
+      "jQuery library"
+    ]
+  },
+  {
+    "canonical_name": "Web components",
+    "category": "web",
+    "aliases": [
+      "custom elements"
+    ]
+  },
+  {
+    "canonical_name": "DOM manipulation",
+    "category": "web",
+    "aliases": [
+      "Document Object Model"
+    ]
+  },
+  {
+    "canonical_name": "Responsive design",
+    "category": "web",
+    "aliases": [
+      "mobile-first design"
+    ]
+  },
+  {
+    "canonical_name": "CSS Grid",
+    "category": "web",
+    "aliases": [
+      "grid layout"
+    ]
+  },
+  {
+    "canonical_name": "Flexbox",
+    "category": "web",
+    "aliases": [
+      "CSS flexbox"
+    ]
+  },
+  {
+    "canonical_name": "Sass",
+    "category": "web",
+    "aliases": [
+      "SCSS"
+    ]
+  },
+  {
+    "canonical_name": "Tailwind CSS",
+    "category": "web",
+    "aliases": [
+      "Tailwind"
+    ]
+  },
+  {
+    "canonical_name": "Bootstrap",
+    "category": "web",
+    "aliases": [
+      "Bootstrap CSS"
+    ]
+  },
+  {
+    "canonical_name": "Material UI",
+    "category": "web",
+    "aliases": [
+      "MUI"
+    ]
+  },
+  {
+    "canonical_name": "Web accessibility",
+    "category": "web",
+    "aliases": [
+      "WCAG",
+      "a11y"
+    ]
+  },
+  {
+    "canonical_name": "Frontend testing",
+    "category": "web",
+    "aliases": [
+      "UI testing"
+    ]
+  },
+  {
+    "canonical_name": "Jest",
+    "category": "web",
+    "aliases": [
+      "Jest testing"
+    ]
+  },
+  {
+    "canonical_name": "Playwright",
+    "category": "web",
+    "aliases": [
+      "browser automation"
+    ]
+  },
+  {
+    "canonical_name": "Cypress",
+    "category": "web",
+    "aliases": [
+      "Cypress testing"
+    ]
+  },
+  {
+    "canonical_name": "Web performance",
+    "category": "web",
+    "aliases": [
+      "frontend performance"
+    ]
+  },
+  {
+    "canonical_name": "Progressive web apps",
+    "category": "web",
+    "aliases": [
+      "PWA"
+    ]
+  },
+  {
+    "canonical_name": "Service workers",
+    "category": "web",
+    "aliases": [
+      "web workers"
+    ]
+  },
+  {
+    "canonical_name": "Browser storage",
+    "category": "web",
+    "aliases": [
+      "local storage"
+    ]
+  },
+  {
+    "canonical_name": "WebSockets",
+    "category": "web",
+    "aliases": [
+      "WebSocket protocol"
+    ]
+  },
+  {
+    "canonical_name": "Server-side rendering",
+    "category": "web",
+    "aliases": [
+      "SSR"
+    ]
+  },
+  {
+    "canonical_name": "Static site generation",
+    "category": "web",
+    "aliases": [
+      "SSG"
+    ]
+  },
+  {
+    "canonical_name": "Vite",
+    "category": "web",
+    "aliases": [
+      "Vite bundler"
+    ]
+  },
+  {
+    "canonical_name": "Webpack",
+    "category": "web",
+    "aliases": [
+      "webpack bundler"
+    ]
+  },
+  {
+    "canonical_name": "REST client integration",
+    "category": "web",
+    "aliases": [
+      "fetch API",
+      "Axios"
+    ]
+  },
+  {
+    "canonical_name": "FastAPI",
+    "category": "web",
+    "aliases": [
+      "Fast API"
+    ]
+  },
+  {
+    "canonical_name": "Django",
+    "category": "web",
+    "aliases": [
+      "Django framework"
+    ]
+  },
+  {
+    "canonical_name": "Flask",
+    "category": "web",
+    "aliases": [
+      "Flask framework"
+    ]
+  },
+  {
+    "canonical_name": "Fastify",
+    "category": "web",
+    "aliases": [
+      "Fastify Node"
+    ]
+  },
+  {
+    "canonical_name": "Express.js",
+    "category": "web",
+    "aliases": [
+      "Express",
+      "ExpressJS"
+    ]
+  },
+  {
+    "canonical_name": "NestJS",
+    "category": "web",
+    "aliases": [
+      "Nest.js"
+    ]
+  },
+  {
+    "canonical_name": "Spring Boot",
+    "category": "web",
+    "aliases": [
+      "Spring framework"
+    ]
+  },
+  {
+    "canonical_name": "ASP.NET Core",
+    "category": "web",
+    "aliases": [
+      ".NET Core web"
+    ]
+  },
+  {
+    "canonical_name": "Laravel",
+    "category": "web",
+    "aliases": [
+      "Laravel PHP"
+    ]
+  },
+  {
+    "canonical_name": "Ruby on Rails",
+    "category": "web",
+    "aliases": [
+      "Rails"
+    ]
+  },
+  {
+    "canonical_name": "Web authentication",
+    "category": "web",
+    "aliases": [
+      "login flows"
+    ]
+  },
+  {
+    "canonical_name": "Session management",
+    "category": "web",
+    "aliases": [
+      "web sessions"
+    ]
+  },
+  {
+    "canonical_name": "Web security",
+    "category": "web",
+    "aliases": [
+      "OWASP"
+    ]
+  },
+  {
+    "canonical_name": "Content security policy",
+    "category": "web",
+    "aliases": [
+      "CSP headers"
+    ]
+  },
+  {
+    "canonical_name": "Cross-site scripting prevention",
+    "category": "web",
+    "aliases": [
+      "XSS prevention"
+    ]
+  },
+  {
+    "canonical_name": "CSRF protection",
+    "category": "web",
+    "aliases": [
+      "cross-site request forgery"
+    ]
+  },
+  {
+    "canonical_name": "Responsive email design",
+    "category": "web",
+    "aliases": [
+      "HTML email"
+    ]
+  },
+  {
+    "canonical_name": "SEO fundamentals",
+    "category": "web",
+    "aliases": [
+      "search engine optimization"
+    ]
+  },
+  {
+    "canonical_name": "Web analytics",
+    "category": "web",
+    "aliases": [
+      "website analytics"
+    ]
+  },
+  {
+    "canonical_name": "Design systems",
+    "category": "web",
+    "aliases": [
+      "UI design systems"
+    ]
+  },
+  {
+    "canonical_name": "Figma handoff",
+    "category": "web",
+    "aliases": [
+      "design-to-code"
+    ]
+  },
+  {
+    "canonical_name": "Internationalization",
+    "category": "web",
+    "aliases": [
+      "i18n"
+    ]
+  },
+  {
+    "canonical_name": "Localization",
+    "category": "web",
+    "aliases": [
+      "l10n"
+    ]
+  },
+  {
+    "canonical_name": "GraphQL client integration",
+    "category": "web",
+    "aliases": [
+      "Apollo Client"
+    ]
+  },
+  {
+    "canonical_name": "OpenAPI",
+    "category": "web",
+    "aliases": [
+      "Swagger"
+    ]
+  },
+  {
+    "canonical_name": "Embedded C",
+    "category": "embedded",
+    "aliases": [
+      "C for microcontrollers"
+    ]
+  },
+  {
+    "canonical_name": "Embedded C++",
+    "category": "embedded",
+    "aliases": [
+      "C++ firmware"
+    ]
+  },
+  {
+    "canonical_name": "Microcontrollers",
+    "category": "embedded",
+    "aliases": [
+      "MCUs"
+    ]
+  },
+  {
+    "canonical_name": "Arduino",
+    "category": "embedded",
+    "aliases": [
+      "Arduino IDE"
+    ]
+  },
+  {
+    "canonical_name": "ESP32",
+    "category": "embedded",
+    "aliases": [
+      "ESP32 development"
+    ]
+  },
+  {
+    "canonical_name": "Raspberry Pi",
+    "category": "embedded",
+    "aliases": [
+      "Raspberry Pi boards"
+    ]
+  },
+  {
+    "canonical_name": "STM32",
+    "category": "embedded",
+    "aliases": [
+      "STM32 microcontrollers"
+    ]
+  },
+  {
+    "canonical_name": "ARM architecture",
+    "category": "embedded",
+    "aliases": [
+      "ARM Cortex"
+    ]
+  },
+  {
+    "canonical_name": "RISC-V",
+    "category": "embedded",
+    "aliases": [
+      "RISC V"
+    ]
+  },
+  {
+    "canonical_name": "Firmware development",
+    "category": "embedded",
+    "aliases": [
+      "firmware engineering"
+    ]
+  },
+  {
+    "canonical_name": "Real-time systems",
+    "category": "embedded",
+    "aliases": [
+      "RTOS concepts"
+    ]
+  },
+  {
+    "canonical_name": "FreeRTOS",
+    "category": "embedded",
+    "aliases": [
+      "Free RTOS"
+    ]
+  },
+  {
+    "canonical_name": "Zephyr RTOS",
+    "category": "embedded",
+    "aliases": [
+      "Zephyr"
+    ]
+  },
+  {
+    "canonical_name": "Embedded Linux",
+    "category": "embedded",
+    "aliases": [
+      "Linux on embedded devices"
+    ]
+  },
+  {
+    "canonical_name": "Device drivers",
+    "category": "embedded",
+    "aliases": [
+      "driver development"
+    ]
+  },
+  {
+    "canonical_name": "Bare-metal programming",
+    "category": "embedded",
+    "aliases": [
+      "bare metal"
+    ]
+  },
+  {
+    "canonical_name": "Interrupt handling",
+    "category": "embedded",
+    "aliases": [
+      "interrupt service routines"
+    ]
+  },
+  {
+    "canonical_name": "Direct memory access",
+    "category": "embedded",
+    "aliases": [
+      "DMA"
+    ]
+  },
+  {
+    "canonical_name": "Memory-mapped I/O",
+    "category": "embedded",
+    "aliases": [
+      "MMIO"
+    ]
+  },
+  {
+    "canonical_name": "UART",
+    "category": "embedded",
+    "aliases": [
+      "serial communication"
+    ]
+  },
+  {
+    "canonical_name": "SPI",
+    "category": "embedded",
+    "aliases": [
+      "Serial Peripheral Interface"
+    ]
+  },
+  {
+    "canonical_name": "I2C",
+    "category": "embedded",
+    "aliases": [
+      "I squared C"
+    ]
+  },
+  {
+    "canonical_name": "CAN bus",
+    "category": "embedded",
+    "aliases": [
+      "Controller Area Network"
+    ]
+  },
+  {
+    "canonical_name": "USB",
+    "category": "embedded",
+    "aliases": [
+      "USB protocol"
+    ]
+  },
+  {
+    "canonical_name": "Ethernet",
+    "category": "embedded",
+    "aliases": [
+      "wired networking"
+    ]
+  },
+  {
+    "canonical_name": "BLE",
+    "category": "embedded",
+    "aliases": [
+      "Bluetooth Low Energy"
+    ]
+  },
+  {
+    "canonical_name": "Bluetooth",
+    "category": "embedded",
+    "aliases": [
+      "Bluetooth Classic"
+    ]
+  },
+  {
+    "canonical_name": "Wi-Fi",
+    "category": "embedded",
+    "aliases": [
+      "802.11 networking"
+    ]
+  },
+  {
+    "canonical_name": "LoRaWAN",
+    "category": "embedded",
+    "aliases": [
+      "LoRa"
+    ]
+  },
+  {
+    "canonical_name": "Zigbee",
+    "category": "embedded",
+    "aliases": [
+      "ZigBee"
+    ]
+  },
+  {
+    "canonical_name": "MQTT",
+    "category": "embedded",
+    "aliases": [
+      "Message Queuing Telemetry Transport"
+    ]
+  },
+  {
+    "canonical_name": "Modbus",
+    "category": "embedded",
+    "aliases": [
+      "Modbus protocol"
+    ]
+  },
+  {
+    "canonical_name": "IoT",
+    "category": "embedded",
+    "aliases": [
+      "Internet of Things"
+    ]
+  },
+  {
+    "canonical_name": "Sensor integration",
+    "category": "embedded",
+    "aliases": [
+      "sensor interfacing"
+    ]
+  },
+  {
+    "canonical_name": "Actuator control",
+    "category": "embedded",
+    "aliases": [
+      "motor and actuator control"
+    ]
+  },
+  {
+    "canonical_name": "Analog-to-digital conversion",
+    "category": "embedded",
+    "aliases": [
+      "ADC"
+    ]
+  },
+  {
+    "canonical_name": "Digital-to-analog conversion",
+    "category": "embedded",
+    "aliases": [
+      "DAC"
+    ]
+  },
+  {
+    "canonical_name": "Pulse-width modulation",
+    "category": "embedded",
+    "aliases": [
+      "PWM"
+    ]
+  },
+  {
+    "canonical_name": "Signal processing",
+    "category": "embedded",
+    "aliases": [
+      "digital signal processing"
+    ]
+  },
+  {
+    "canonical_name": "Digital signal processing",
+    "category": "embedded",
+    "aliases": [
+      "DSP"
+    ]
+  },
+  {
+    "canonical_name": "Control systems",
+    "category": "embedded",
+    "aliases": [
+      "feedback control"
+    ]
+  },
+  {
+    "canonical_name": "PID control",
+    "category": "embedded",
+    "aliases": [
+      "proportional integral derivative"
+    ]
+  },
+  {
+    "canonical_name": "Robotics",
+    "category": "embedded",
+    "aliases": [
+      "robot control"
+    ]
+  },
+  {
+    "canonical_name": "ROS",
+    "category": "embedded",
+    "aliases": [
+      "Robot Operating System"
+    ]
+  },
+  {
+    "canonical_name": "PCB design",
+    "category": "embedded",
+    "aliases": [
+      "printed circuit board design"
+    ]
+  },
+  {
+    "canonical_name": "KiCad",
+    "category": "embedded",
+    "aliases": [
+      "KiCad EDA"
+    ]
+  },
+  {
+    "canonical_name": "Altium Designer",
+    "category": "embedded",
+    "aliases": [
+      "Altium"
+    ]
+  },
+  {
+    "canonical_name": "Circuit analysis",
+    "category": "embedded",
+    "aliases": [
+      "electronics fundamentals"
+    ]
+  },
+  {
+    "canonical_name": "Schematic capture",
+    "category": "embedded",
+    "aliases": [
+      "circuit schematics"
+    ]
+  },
+  {
+    "canonical_name": "Electronics prototyping",
+    "category": "embedded",
+    "aliases": [
+      "breadboarding"
+    ]
+  },
+  {
+    "canonical_name": "Hardware debugging",
+    "category": "embedded",
+    "aliases": [
+      "board bring-up"
+    ]
+  },
+  {
+    "canonical_name": "Oscilloscope",
+    "category": "embedded",
+    "aliases": [
+      "scope measurements"
+    ]
+  },
+  {
+    "canonical_name": "Logic analyzer",
+    "category": "embedded",
+    "aliases": [
+      "digital logic analyzer"
+    ]
+  },
+  {
+    "canonical_name": "JTAG",
+    "category": "embedded",
+    "aliases": [
+      "Joint Test Action Group"
+    ]
+  },
+  {
+    "canonical_name": "SWD debugging",
+    "category": "embedded",
+    "aliases": [
+      "Serial Wire Debug"
+    ]
+  },
+  {
+    "canonical_name": "Hardware-in-the-loop testing",
+    "category": "embedded",
+    "aliases": [
+      "HIL testing"
+    ]
+  },
+  {
+    "canonical_name": "Unit testing embedded software",
+    "category": "embedded",
+    "aliases": [
+      "firmware unit tests"
+    ]
+  },
+  {
+    "canonical_name": "Power management",
+    "category": "embedded",
+    "aliases": [
+      "low-power design"
+    ]
+  },
+  {
+    "canonical_name": "Battery systems",
+    "category": "embedded",
+    "aliases": [
+      "battery management"
+    ]
+  },
+  {
+    "canonical_name": "Sensor fusion",
+    "category": "embedded",
+    "aliases": [
+      "multi-sensor fusion"
+    ]
+  },
+  {
+    "canonical_name": "Communication",
+    "category": "professional",
+    "aliases": [
+      "clear communication"
+    ]
+  },
+  {
+    "canonical_name": "Written communication",
+    "category": "professional",
+    "aliases": [
+      "professional writing"
+    ]
+  },
+  {
+    "canonical_name": "Presentation skills",
+    "category": "professional",
+    "aliases": [
+      "presenting"
+    ]
+  },
+  {
+    "canonical_name": "Teamwork",
+    "category": "professional",
+    "aliases": [
+      "collaboration"
+    ]
+  },
+  {
+    "canonical_name": "Cross-functional collaboration",
+    "category": "professional",
+    "aliases": [
+      "working across teams"
+    ]
+  },
+  {
+    "canonical_name": "Problem solving",
+    "category": "professional",
+    "aliases": [
+      "analytical problem solving"
+    ]
+  },
+  {
+    "canonical_name": "Critical thinking",
+    "category": "professional",
+    "aliases": [
+      "reasoned judgment"
+    ]
+  },
+  {
+    "canonical_name": "Creativity",
+    "category": "professional",
+    "aliases": [
+      "creative thinking"
+    ]
+  },
+  {
+    "canonical_name": "Adaptability",
+    "category": "professional",
+    "aliases": [
+      "flexibility"
+    ]
+  },
+  {
+    "canonical_name": "Initiative",
+    "category": "professional",
+    "aliases": [
+      "self-starter"
+    ]
+  },
+  {
+    "canonical_name": "Ownership",
+    "category": "professional",
+    "aliases": [
+      "accountability"
+    ]
+  },
+  {
+    "canonical_name": "Time management",
+    "category": "professional",
+    "aliases": [
+      "prioritization"
+    ]
+  },
+  {
+    "canonical_name": "Organization",
+    "category": "professional",
+    "aliases": [
+      "organizational skills"
+    ]
+  },
+  {
+    "canonical_name": "Attention to detail",
+    "category": "professional",
+    "aliases": [
+      "detail oriented"
+    ]
+  },
+  {
+    "canonical_name": "Leadership",
+    "category": "professional",
+    "aliases": [
+      "team leadership"
+    ]
+  },
+  {
+    "canonical_name": "Mentoring",
+    "category": "professional",
+    "aliases": [
+      "peer mentoring"
+    ]
+  },
+  {
+    "canonical_name": "Conflict resolution",
+    "category": "professional",
+    "aliases": [
+      "mediation"
+    ]
+  },
+  {
+    "canonical_name": "Negotiation",
+    "category": "professional",
+    "aliases": [
+      "negotiating"
+    ]
+  },
+  {
+    "canonical_name": "Customer empathy",
+    "category": "professional",
+    "aliases": [
+      "user empathy"
+    ]
+  },
+  {
+    "canonical_name": "Stakeholder management",
+    "category": "professional",
+    "aliases": [
+      "stakeholder communication"
+    ]
+  },
+  {
+    "canonical_name": "Requirements gathering",
+    "category": "professional",
+    "aliases": [
+      "eliciting requirements"
+    ]
+  },
+  {
+    "canonical_name": "Project management",
+    "category": "professional",
+    "aliases": [
+      "project planning"
+    ]
+  },
+  {
+    "canonical_name": "Risk management",
+    "category": "professional",
+    "aliases": [
+      "project risk"
+    ]
+  },
+  {
+    "canonical_name": "Decision making",
+    "category": "professional",
+    "aliases": [
+      "sound judgment"
+    ]
+  },
+  {
+    "canonical_name": "Research",
+    "category": "professional",
+    "aliases": [
+      "desk research"
+    ]
+  },
+  {
+    "canonical_name": "Literature review",
+    "category": "professional",
+    "aliases": [
+      "reviewing research"
+    ]
+  },
+  {
+    "canonical_name": "Technical presentation",
+    "category": "professional",
+    "aliases": [
+      "engineering presentations"
+    ]
+  },
+  {
+    "canonical_name": "Meeting facilitation",
+    "category": "professional",
+    "aliases": [
+      "facilitating meetings"
+    ]
+  },
+  {
+    "canonical_name": "Documentation habits",
+    "category": "professional",
+    "aliases": [
+      "keeping project notes"
+    ]
+  },
+  {
+    "canonical_name": "Remote collaboration",
+    "category": "professional",
+    "aliases": [
+      "distributed teamwork"
+    ]
+  },
+  {
+    "canonical_name": "Intercultural communication",
+    "category": "professional",
+    "aliases": [
+      "cross-cultural communication"
+    ]
+  },
+  {
+    "canonical_name": "Ethical reasoning",
+    "category": "professional",
+    "aliases": [
+      "professional ethics"
+    ]
+  },
+  {
+    "canonical_name": "Data ethics",
+    "category": "professional",
+    "aliases": [
+      "responsible data use"
+    ]
+  },
+  {
+    "canonical_name": "Privacy awareness",
+    "category": "professional",
+    "aliases": [
+      "privacy by design"
+    ]
+  },
+  {
+    "canonical_name": "Security awareness",
+    "category": "professional",
+    "aliases": [
+      "secure working practices"
+    ]
+  },
+  {
+    "canonical_name": "Learning agility",
+    "category": "professional",
+    "aliases": [
+      "rapid learning"
+    ]
+  },
+  {
+    "canonical_name": "Self-directed learning",
+    "category": "professional",
+    "aliases": [
+      "independent learning"
+    ]
+  },
+  {
+    "canonical_name": "Feedback literacy",
+    "category": "professional",
+    "aliases": [
+      "giving and receiving feedback"
+    ]
+  },
+  {
+    "canonical_name": "Resilience",
+    "category": "professional",
+    "aliases": [
+      "persistence"
+    ]
+  },
+  {
+    "canonical_name": "Professional networking",
+    "category": "professional",
+    "aliases": [
+      "career networking"
+    ]
+  },
+  {
+    "canonical_name": "Career planning",
+    "category": "professional",
+    "aliases": [
+      "career development"
+    ]
+  },
+  {
+    "canonical_name": "Portfolio development",
+    "category": "professional",
+    "aliases": [
+      "project portfolio"
+    ]
+  },
+  {
+    "canonical_name": "Resume writing",
+    "category": "professional",
+    "aliases": [
+      "CV writing"
+    ]
+  },
+  {
+    "canonical_name": "Interview skills",
+    "category": "professional",
+    "aliases": [
+      "job interview preparation"
+    ]
+  },
+  {
+    "canonical_name": "Business awareness",
+    "category": "professional",
+    "aliases": [
+      "commercial awareness"
+    ]
+  },
+  {
+    "canonical_name": "Product thinking",
+    "category": "professional",
+    "aliases": [
+      "product sense"
+    ]
+  },
+  {
+    "canonical_name": "User-centered design",
+    "category": "professional",
+    "aliases": [
+      "human-centered design"
+    ]
+  },
+  {
+    "canonical_name": "Design thinking",
+    "category": "professional",
+    "aliases": [
+      "human-centered problem solving"
+    ]
+  },
+  {
+    "canonical_name": "Service orientation",
+    "category": "professional",
+    "aliases": [
+      "customer service"
+    ]
+  },
+  {
+    "canonical_name": "Sustainability awareness",
+    "category": "professional",
+    "aliases": [
+      "environmental awareness"
+    ]
+  },
+  {
+    "canonical_name": "Quality mindset",
+    "category": "professional",
+    "aliases": [
+      "commitment to quality"
+    ]
+  },
+  {
+    "canonical_name": "Process improvement",
+    "category": "professional",
+    "aliases": [
+      "continuous improvement"
+    ]
+  },
+  {
+    "canonical_name": "Entrepreneurship",
+    "category": "professional",
+    "aliases": [
+      "entrepreneurial thinking"
+    ]
+  },
+  {
+    "canonical_name": "Innovation management",
+    "category": "professional",
+    "aliases": [
+      "innovation"
+    ]
+  },
+  {
+    "canonical_name": "Budget awareness",
+    "category": "professional",
+    "aliases": [
+      "cost awareness"
+    ]
+  },
+  {
+    "canonical_name": "Consulting skills",
+    "category": "professional",
+    "aliases": [
+      "client advisory"
+    ]
+  },
+  {
+    "canonical_name": "Teaching",
+    "category": "professional",
+    "aliases": [
+      "instruction"
+    ]
+  },
+  {
+    "canonical_name": "Tutoring",
+    "category": "professional",
+    "aliases": [
+      "academic tutoring"
+    ]
+  },
+  {
+    "canonical_name": "Facilitation",
+    "category": "professional",
+    "aliases": [
+      "group facilitation"
+    ]
+  },
+  {
+    "canonical_name": "Volunteer coordination",
+    "category": "professional",
+    "aliases": [
+      "volunteer management"
+    ]
+  }
+]

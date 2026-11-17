@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f2">
+  <title>SkillBridge — Internship matcher</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#demo" aria-label="SkillBridge home">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span>skillbridge<span class="brand-period">.</span></span>
+    </a>
+    <span class="header-note"><span class="live-dot"></span> Skill-based internship matching</span>
+  </header>
+
+  <main class="page-shell">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">A clearer path to your next opportunity</p>
+      <h1 id="page-title">Find the work that fits <em>what you know.</em></h1>
+      <p class="intro-copy">Turn your experience into a skill profile, compare relevant internships, and see where your next learning opportunity could be.</p>
+    </section>
+
+    <nav class="tab-list" aria-label="Main sections" role="tablist">
+      <button class="tab-button is-active" id="tab-demo" type="button" role="tab" aria-selected="true" aria-controls="panel-demo" data-tab="demo">
+        Matcher demo
+      </button>
+      <button class="tab-button" id="tab-results" type="button" role="tab" aria-selected="false" aria-controls="panel-results" data-tab="results">
+        Evaluation results
+      </button>
+    </nav>
+
+    <section class="tab-panel" id="panel-demo" role="tabpanel" aria-labelledby="tab-demo" data-panel="demo">
+      <div class="demo-layout">
+        <aside class="profile-card surface">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Your starting point</p>
+              <h2>Tell us about your work</h2>
+            </div>
+          </div>
+          <p class="muted">Paste a short profile, project summary, or resume excerpt, or upload a PDF resume to scan.</p>
+          <form id="match-form">
+            <label class="sr-only" for="profile-text">Profile text</label>
+            <textarea id="profile-text" name="profile_text" rows="8" placeholder="Paste your profile text here, or choose a resume PDF below. For example: I built a small Flask service, cleaned survey data with Python, and shipped a responsive dashboard…"></textarea>
+            <div class="form-meta"><span id="character-count">0 characters</span><span>Text stays in this demo request</span></div>
+            <div class="upload-section">
+              <label class="upload-title" for="resume-file">Or scan a resume PDF</label>
+              <input id="resume-file" name="resume" type="file" accept=".pdf,application/pdf">
+              <p class="upload-hint" id="upload-hint">PDF text is extracted in memory and not saved. A selected PDF takes priority over pasted text.</p>
+              <p class="selected-file" id="selected-file" hidden></p>
+            </div>
+            <button class="primary-button" id="match-button" type="submit">
+              Find my matches <span aria-hidden="true">↗</span>
+            </button>
+          </form>
+          <p class="form-error" id="match-error" role="alert" hidden></p>
+          <div class="privacy-note"><span aria-hidden="true">✳</span> Examples and postings in this project are synthetic.</div>
+        </aside>
+
+        <div class="demo-results" id="demo-results" aria-live="polite">
+          <div class="empty-state surface" id="empty-state">
+            <div class="empty-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="orbit-center">✳</span></div>
+            <p class="eyebrow">Your results will appear here</p>
+            <h2>Start with the skills<br>you already have.</h2>
+            <p class="muted">Your extracted skills and internship recommendations will appear after you submit a profile.</p>
+          </div>
+          <div id="match-output" hidden>
+            <section class="surface skill-summary">
+              <div class="section-heading compact-heading">
+                <div><p class="eyebrow">Shared skill space</p><h2>Skills we found</h2></div>
+                <span class="result-count" id="skill-count">0 skills</span>
+              </div>
+              <p class="source-note" id="source-note" hidden></p>
+              <div class="skill-chips" id="skill-chips"></div>
+            </section>
+            <div class="results-heading">
+              <div><p class="eyebrow">Ranked for your profile</p><h2>Internship matches</h2></div>
+              <p class="muted">Matcher and keyword baseline</p>
+            </div>
+            <div class="match-columns">
+              <section class="system-column" aria-labelledby="matcher-heading">
+                <div class="system-heading matcher-heading"><span class="system-icon">✳</span><div><h3 id="matcher-heading">Skill matcher</h3><p>Shared skill overlap</p></div></div>
+                <div class="internship-list" id="matcher-list"></div>
+              </section>
+              <section class="system-column" aria-labelledby="baseline-heading">
+                <div class="system-heading baseline-heading"><span class="system-icon">⌕</span><div><h3 id="baseline-heading">Keyword baseline</h3><p>Words in common</p></div></div>
+                <div class="internship-list" id="baseline-list"></div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="panel-results" role="tabpanel" aria-labelledby="tab-results" data-panel="results" hidden>
+      <div class="results-page-heading">
+        <div><p class="eyebrow">Human-labeled evaluation</p><h2>How the matcher compares</h2><p class="muted">Metrics load from the evaluation output only. Add your completed label sheets and run the evaluator to populate this view.</p></div>
+        <button class="quiet-button" id="refresh-metrics" type="button">Refresh metrics <span aria-hidden="true">↻</span></button>
+      </div>
+      <div id="metrics-status" class="status-card" role="status" aria-live="polite">Loading evaluation…</div>
+      <div id="metrics-content" hidden>
+        <section class="metric-summary-grid" id="metric-summary"></section>
+        <section class="surface chart-card">
+          <div class="section-heading">
+            <div><p class="eyebrow">Side-by-side view</p><h3>Metric comparison</h3></div>
+            <span class="chart-legend"><i class="legend-matcher"></i> Matcher / hybrid <i class="legend-baseline"></i> Baseline / dictionary</span>
+          </div>
+          <div id="metrics-chart" class="bar-chart" role="img" aria-label="Bar chart comparing computed metrics"></div>
+          <p class="chart-caption">Bars reflect the values in <code>/metrics</code>. Gap usefulness is shown for the matcher’s generated report.</p>
+        </section>
+        <section class="surface table-card">
+          <div class="section-heading"><div><p class="eyebrow">Computed values</p><h3>Evaluation table</h3></div><span id="evaluation-counts" class="muted"></span></div>
+          <div class="table-scroll"><table><thead><tr><th>Metric</th><th>Matcher / hybrid</th><th>Baseline / dictionary</th></tr></thead><tbody id="metrics-table"></tbody></table></div>
+        </section>
+        <p class="metrics-footnote" id="metrics-footnote"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>SkillBridge <span class="brand-period">✳</span> University project prototype</span><span>Synthetic development data · Human-rated evaluation</span></footer>
+</body>
+</html>
